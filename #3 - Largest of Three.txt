@@ -1,0 +1,28 @@
+public static Integer findLargest(Integer num1, Integer num2, Integer num3) 
+{
+	//code here
+	// Using conditional statements
+
+    	if ( num1 > num2 && num1 > num3) 
+    	{
+    	    return num1;
+    	}
+    	else if (num2 > num1 && num2 > num3)
+    	{
+    	    return num2;
+   	 }
+    	else
+    	{
+    	    return num3;
+    	}
+}
+
+||
+
+public static Integer findLargest(Integer num1, Integer num2, Integer num3) 
+	{
+		//code here
+		// math.max() returns the maximum value. It passes only 2 arguments in apex code
+
+   		return math.max(num1,math.max(num2,num3));
+	}
